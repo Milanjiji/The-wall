@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wall</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/45e114222a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <!-- <div id="box1" class="box">Box 1</div>
-    <div id="box2" class="box">Box 2</div> -->
+<body id="body" >
+    <p id="tutor" >Click on the add icon...</p>
+    <div class="infoOverlay"></div>
     <div id="container" ></div>
     <svg id="svg"></svg>
-    <button class="button" onclick="enableCreateBox()" >+</button>
-    <button class="connect" onclick="connectElements('box-0','box-1')">Connect Boxes</button>
+    <button id="CreateBoxButton" class="createBoxAnimate" onclick="enableCreateBox()" ><i class="fa-solid fa-plus"></i></button>
+    <button class="info" onclick="" ><i class="fa-solid fa-info"></i></button>
+    
     <script src="./script.js"></script>
 </body>
 </html>
