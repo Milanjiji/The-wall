@@ -205,3 +205,23 @@ function connectElements(box_1, box_2) {
     })
 }
 
+const InfoDisplay = () =>{
+    const infoOverlay = document.querySelector('.infoOverlay');
+    infoOverlay.style.display = 'flex'
+}
+const CloseInfoDisplay = () =>{
+    const infoOverlay = document.querySelector('.infoOverlay');
+    infoOverlay.style.display = 'none'
+}
+
+const CopyLink = () =>{
+    const alertText = document.querySelector('.linkCopyAlert')
+    navigator.clipboard.writeText("https://github.com/Milanjiji/The-wall.git").then(() => {
+        alertText.style.opacity = 1
+        setTimeout(()=>{
+            alertText.style.opacity = 0
+        },1000)
+    }).catch(err => {
+        alert("Failed to copy: ", err);
+    });
+}

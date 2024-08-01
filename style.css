@@ -90,7 +90,80 @@ body.bodyBackgroundColorAnimate{
 .info:hover{
     background-color: #1e1e1e;
     box-shadow: 3px 3px 3px var(--secondary);
+}
+.infoOverlay{
+    transition: 0.5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.infoOverlay button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 0px var(--secondary);
+    transition: 0.1s;
 
+}
+.infoOverlay button:hover{
+    background-color: #1e1e1e;
+    box-shadow: 3px 3px 3px var(--secondary);
+}
+.infoOverlayContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 50px;
+}
+.infoOverlayContent i{
+    margin-left: 10px;
+}
+
+.gitCopy{
+    background-color: black;
+    transition: 0.1s;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gitCopy:hover{
+    background-color: var(--secondary);
+}
+.linkCopyAlert{
+    transition: 0.5s;
+    position: absolute;
+    top: 20px;
+    width: 100vw;
+    text-align: center;
+    z-index: 4;
+    color: white;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
 }
 .plug_button{
     background-color: var(--secondary);

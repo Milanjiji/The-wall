@@ -8,12 +8,23 @@
     <script src="https://kit.fontawesome.com/45e114222a.js" crossorigin="anonymous"></script>
 </head>
 <body id="body" >
+    
     <p id="tutor" >Click on the add icon...</p>
-    <div class="infoOverlay"></div>
+    <div class="infoOverlay">
+        <p class="linkCopyAlert" >link copied to clipboard!</p>
+        <button onclick="CloseInfoDisplay()" ><i class="fa-solid fa-xmark"></i></button>
+        <div class="infoOverlayContent">
+            <h1>The Wall</h1>
+            <p>An open source personal project</p>
+            <p onclick="CopyLink()" class="gitCopy" >https://github.com/Milanjiji/The-wall.git<i class="fa-solid fa-copy"></i></p>
+            <p>Note : <i class="fa-solid fa-grip"></i> To drag and move notes</p>
+            <p>Note : <i class="fa-solid fa-plug"></i> To connect with other notes</p>
+        </div>
+    </div>
     <div id="container" ></div>
     <svg id="svg"></svg>
     <button id="CreateBoxButton" class="createBoxAnimate" onclick="enableCreateBox()" ><i class="fa-solid fa-plus"></i></button>
-    <button class="info" onclick="" ><i class="fa-solid fa-info"></i></button>
+    <button class="info" onclick="InfoDisplay()" ><i class="fa-solid fa-info"></i></button>
     
     <script src="./script.js"></script>
 </body>
